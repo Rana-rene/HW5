@@ -68,6 +68,6 @@ for (const x of pencil) {
 
 
 for(let i= 0; i<pencil.length; i++) {
-    console.log(`Full Name(last, first): ${pencil[i].lastName}, ${pencil[i].firstName}`);
-    console.log(`Updates Scores: ${pencil[i].Updated_Scores}`)
+    console.log(`Full Name(last, first): ${pencil[i].lastName}, ${pencil[i].firstName}\n Updates Scores: ${pencil[i].Updated_Scores}`);
+    // console.log(`Updates Scores: ${pencil[i].Updated_Scores}`)
 }
