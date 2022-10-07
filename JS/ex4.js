@@ -55,23 +55,16 @@ const extraPoints = array => array.map(student => {
 let pencil = extraPoints(studentList);
 
 
-console.log(pencil);
-
-const newArray = []
-
 for (const x of pencil) { 
       let gradesSum = 0;
       for (const grade of x.Updated_Scores) {
         gradesSum += grade;
       }
       const averageGrade = gradesSum / x.Updated_Scores.length;
-      newArray.push({
-        // name: x.name,
-        avgGrade: averageGrade
-      });
+      x.Updated_Scores.push(averageGrade)
   }
 
-console.log(newArray);
+  console.log(pencil);
 
 
 for(let i= 0; i<pencil.length; i++) {
